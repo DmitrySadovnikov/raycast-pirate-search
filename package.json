@@ -1,0 +1,36 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "pirate-search",
+  "title": "pirate-search",
+  "description": "",
+  "icon": "command-icon.png",
+  "author": "DmitrySadovnikov",
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "index",
+      "title": "Pirate search",
+      "description": "A Raycast extension for fast searches for movies, series, games, music, software, books, and more on sites and torrent trackers such as Rutracker, NNM Club, and Flibusta.",
+      "mode": "view"
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.70.3",
+    "@raycast/utils": "^1.4.8"
+  },
+  "devDependencies": {
+    "@raycast/eslint-config": "^1.0.6",
+    "@types/node": "20.8.10",
+    "@types/react": "18.2.27",
+    "eslint": "^8.51.0",
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.2"
+  },
+  "scripts": {
+    "build": "ray build -e dist",
+    "dev": "ray develop",
+    "fix-lint": "ray lint --fix",
+    "lint": "ray lint",
+    "publish": "npx @raycast/api@latest publish"
+  }
+}
